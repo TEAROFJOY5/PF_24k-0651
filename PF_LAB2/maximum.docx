@@ -1,0 +1,11 @@
+1.	Start
+2.	DECLARE x, y, z
+3.	PRINT “Enter three numbers”
+4.	READ x, y, z
+5.	IF x>y AND x>z
+6.	      PRINT “Maximum number is x"
+7.	ELSE IF y>x AND y>z
+8.	      PRINT "Maximum number is y”
+9.	ELSE
+10.	      PRINT "Maximum number is z”
+11.	END
