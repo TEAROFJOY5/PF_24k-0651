@@ -1,0 +1,15 @@
+1.	START
+2.	DECLARE x, y, operator, z
+3.	PRINT “Enter two numbers: “
+4.	READ x, y
+5.	PRINT “Enter the operator”
+6.	READ operator
+7.	IF operator=’+’
+8.	      z=x+y
+9.	ELSE IF operator=’-‘
+10.	     z=x-y
+11.	ELSE
+12.	  PRINT “You have enter an invalid operator”
+13.	ENDIF
+14.	PRINT z
+15.	 END  
