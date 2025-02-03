@@ -1,0 +1,16 @@
+1.	START
+2.	DECLARE sum, x, y, z
+3.	PRINT “Enter three numbers”
+4.	READ x, y, z
+5.	WHILE y=0 do
+6.	      x=x+1
+7.	      y=y-1
+8.	ENDWHILE
+9.	WHILE z=0 do
+10.	      x=x+1
+11.	      z=z-1
+12.	ENDWHILE
+13.	sum=x
+14.	PRINT “The sum is”
+15.	PRINT sum
+16.	END 
