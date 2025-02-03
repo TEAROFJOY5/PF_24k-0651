@@ -1,0 +1,28 @@
+1.	Start
+2.	Print “Enter the month number”
+3.	Read month
+4.	If month == 1
+5.	    Print “The month is January”
+6.	If month ==2
+7.	    Print " The month is February”
+8.	If month == 3
+9.	   Print " The month is March”
+10.	If month == 4
+11.	  Print " The month is April”
+12.	If month == 5
+13.	   Print " The month is May”
+14.	If month == 6
+15.	   Print " the month is June”
+16.	If month == 7
+17.	  Print " the month is July”
+18.	If month == 8
+19.	   Print " the month is August”
+20.	If month == 9
+21.	   Print " the month is September”
+22.	If month == 10
+23.	   Print " the month is October”
+24.	If month == 11 
+25.	   Print " the month is November”
+26.	If month ==12
+27.	   Print " the month is December”
+28.	End
