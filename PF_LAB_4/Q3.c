@@ -20,5 +20,8 @@
        printf("\nCapital alphabets");
        else if(97<=a && 122>=a)
        printf("\nLowerCase alphabets");
+        else 
+        printf("\nInvalid character input");
+    
        
    }
