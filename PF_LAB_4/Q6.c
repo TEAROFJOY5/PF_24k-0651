@@ -1,7 +1,7 @@
 /* Given a positive integer denoting n, do the following:
- * a. If 1&lt;=n&lt;=9, print lowercase English words corresponding to the
+ * a. If num<9, print lowercase English words corresponding to the
  * numbers e.g. (one for 1, two for 2)
- * b. If n&gt;9 print greater then 9
+ * b. If num>9 print greater then 9
  */
 
 #include <stdio.h>
