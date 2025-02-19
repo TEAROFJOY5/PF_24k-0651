@@ -13,7 +13,7 @@
        float price, discountedPrice, discount;
        printf("\nEnter the price of the item: ");
        scanf("%f",&price);
-       if(price<2000)
+       if(price>=500 && price<2000)
        {
           
            discount=price*(5.0/100);
