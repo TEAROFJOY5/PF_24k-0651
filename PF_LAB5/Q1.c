@@ -1,29 +1,24 @@
 #include <stdio.h>
-#include <string.h>
+
 
 int main() {
-    char username[50], password[50], subscriptionType[20];
+   char userName, pass, correctUser= 'f',  correctPass= 'F', subscriptionType;
+   printf("Enter your user name: ");
+   scanf(" %c",&userName);
+   printf("\nEnter your Password: ");
+   scanf(" %c",&pass);
 
-    const char correctUsername[] = "Student";
-    const char correctPassword[] = "Fast1234";
-
-    printf("Enter your username: ");
-    scanf("%s", username);
-
-    printf("Enter your password: ");
-    scanf("%s", password);
-
-    if (strcmp(username, correctUsername) == 0 && strcmp(password, correctPassword) == 0) {
+    if ( userName== correctUser && pass == correctPass) {
         printf("Login successful!\n");
 
-        printf("Enter your subscription type (basic, premium, vip): ");
-        scanf("%s", subscriptionType);
+        printf("Enter your subscription type (basic (b), premium(p), vip(V)): ");
+        scanf(" %c", &subscriptionType);
 
-        if (strcmp(subscriptionType, "basic") == 0) {
+        if (subscriptionType=='b' || subscriptionType=='B') {
             printf("Access granted to Basic Content: News, Articles.\n");
-        } else if (strcmp(subscriptionType, "premium") == 0) {
+        } else if (subscriptionType=='p' || subscriptionType=='P') {
             printf("Access granted to Premium Content: News, Articles, Videos, Music.\n");
-        } else if (strcmp(subscriptionType, "vip") == 0) {
+        } else if (subscriptionType=='v' || subscriptionType=='V') {
             printf("Access granted to VIP Content: News, Articles, Videos, Music, Exclusive Webinars, Personalized Support.\n");
         } else {
             printf("Invalid subscription type.\n");
@@ -34,3 +29,4 @@ int main() {
 
     return 0;
 }
+   
