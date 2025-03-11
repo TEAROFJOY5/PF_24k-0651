@@ -4,8 +4,8 @@
 int main() {
     char username[50], password[50], subscriptionType[20];
 
-    const char correctUsername[] = "user123";
-    const char correctPassword[] = "pass123";
+    const char correctUsername[] = "Student";
+    const char correctPassword[] = "Fast1234";
 
     printf("Enter your username: ");
     scanf("%s", username);
