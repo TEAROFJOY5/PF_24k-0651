@@ -1,4 +1,4 @@
-/* If a student&#39;s attendance is less than 75%, they are not allowed to take the exam. If not,
+/* If a student's attendance is less than 75%, they are not allowed to take the exam. If not,
  * check if their assignment scores meet the passing criteria.
  */
  
