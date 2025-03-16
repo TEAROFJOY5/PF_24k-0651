@@ -5,11 +5,12 @@
 
 int main()
 {
-   int a=0,b=1,term;
+   int a=1,b=1,term;
    printf("\nEnter the total number of term for the Fibonacci sequence: ");
    scanf("%d",&term);
-   printf("\n%d ",b);
-   for(int i=0;i<term-2;i++)
+   printf("\n%d ",a);
+   printf("%d ",b);
+   for(int i=0;i<term-4;i++)
    {
        a=a+b;
        printf("%d ",a);
