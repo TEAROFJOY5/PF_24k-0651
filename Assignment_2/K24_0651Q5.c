@@ -1,3 +1,6 @@
+/*Write a program using a function that finds the largest number and the least number in an array of 10
+integers. Create separate functions for each functionality. Call them in main () as per user’s choice.
+    */
 #include<stdio.h>
 int greatest(int arr[10])
 {
