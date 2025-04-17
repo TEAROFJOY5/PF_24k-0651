@@ -1,3 +1,6 @@
+  /*
+    Write a program that takes a string input from the user and prints the string in reverse using a for loop.
+    */
 #include<stdio.h>
 int main()
 {   int length=0;
