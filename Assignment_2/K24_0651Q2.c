@@ -1,3 +1,6 @@
+/* Create a program that takes an array of strings (names of 5 students) and prints the length of each name
+using a for loop.
+    */
 #include<stdio.h>
 #define NUMBER 5
 #define NAME 20
