@@ -1,3 +1,6 @@
+/* Write a program that compares two strings entered by the user and checks if they are the same or not using
+if-else statements.
+    */
 #include<stdio.h>
 int main()
 {
