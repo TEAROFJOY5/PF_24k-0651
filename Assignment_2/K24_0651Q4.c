@@ -1,3 +1,6 @@
+/* Write a function bool isPrime(int num) that checks whether a number is prime or not. Call the function
+from main() and display whether a number entered by the user is prime.
+        */
 #include<stdio.h>
 #include<stdbool.h>
 #include<string.h>
