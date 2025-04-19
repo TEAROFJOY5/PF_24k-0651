@@ -1,3 +1,8 @@
+/* Write a program that takes two integers, a and b, from the user. Create a function int
+ * sumEvenNumbers(int start, int end) that sums up all the even numbers between start and end
+ * (inclusive). The main() function should call this function and print the sum of even numbers in that range.
+ * If the sum is greater than 100, display a special message "The sum exceeds 100."
+ */
 #include<stdio.h>
 int sumEvenNumbers(int start, int end)
 {
