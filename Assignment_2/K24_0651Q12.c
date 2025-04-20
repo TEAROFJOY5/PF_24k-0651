@@ -1,3 +1,14 @@
+/* Write a program that reads a series of temperature values in Celsius from the user until the user enters
+ * a sentinel value (e.g., -999 to stop). The program should do the following for each temperature:
+ * • Convert it to Fahrenheit using the formula F = (C * 9/5) + 32.
+ * • Categorize the temperature as "Cold", "Moderate", or "Hot" based on the following criteria:
+ * o Cold: Temperature below 10°C
+ * o Moderate: Temperature between 10°C and 30°C (inclusive)
+ * o Hot: Temperature above 30°C
+ * • Create functions for the conversion and categorization. The program should display the
+ * Fahrenheit value and its category after processing each input. Use loops to process multiple
+ * temperatures and display a summary at the end.
+ */
 #include <stdio.h>
 
 float convertToFahrenheit(float celsius) {
