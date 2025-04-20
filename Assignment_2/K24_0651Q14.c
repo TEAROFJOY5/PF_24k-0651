@@ -1,24 +1,20 @@
 #include <stdio.h>
-#include <stdbool.h>
-
 void findCommonElements(int arr1[], int arr2[], int size)
 {
     int common[10]; 
     int commonCount = 0;
-
     for(int i = 0; i < size; i++)
     {
         for(int j = 0; j < size; j++)
         {
             if(arr1[i] == arr2[j])
             {
-               
-                bool isDuplicate = false;
+                int isDuplicate = 0;
                 for(int k = 0; k < commonCount; k++)
                 {
                     if(common[k] == arr1[i])
                     {
-                        isDuplicate = true;
+                        isDuplicate = 1;
                         break;
                     }
                 }
@@ -26,11 +22,10 @@ void findCommonElements(int arr1[], int arr2[], int size)
                 {
                     common[commonCount++] = arr1[i];
                 }
-                break; 
+                break;
             }
         }
     }
-
     if(commonCount == 0)
     {
         printf("No common elements\n");
@@ -45,24 +40,20 @@ void findCommonElements(int arr1[], int arr2[], int size)
         printf("\n");
     }
 }
-
 int main()
 {
     int arr1[10], arr2[10];
-    
     printf("Enter 10 elements for Array 1:\n");
     for(int i = 0; i < 10; i++)
     {
         scanf("%d", &arr1[i]);
     }
-
     printf("Enter 10 elements for Array 2:\n");
     for(int i = 0; i < 10; i++)
     {
         scanf("%d", &arr2[i]);
     }
-
     findCommonElements(arr1, arr2, 10);
-
     return 0;
 }
+
