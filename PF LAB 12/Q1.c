@@ -21,7 +21,7 @@ int main() {
     scanf("%d", &noOfStds);
 
     // 2. Allocate memory for grades array (2D) and number of grades per student
-    int **grades = (int **)malloc(noOfStds * sizeof(int *));
+    int **students = (int **)malloc(noOfStds * sizeof(int *));
     int *num_grades = (int *)malloc(noOfStds * sizeof(int)); // To keep track of how many grades per student
 
     // 3. Input grades for each student
@@ -29,11 +29,11 @@ int main() {
         printf("\nEnter number of grades for student %d: ", i + 1);
         scanf("%d", &num_grades[i]);
 
-        grades[i] = (int *)calloc(num_grades[i], sizeof(int));
+        students[i] = (int *)calloc(num_grades[i], sizeof(int));
 
         printf("Enter %d grades for student %d:\n", num_grades[i], i + 1);
         for (int j = 0; j < num_grades[i]; j++) {
-            scanf("%d", &grades[i][j]);
+            scanf("%d", &students[i][j]);
         }
     }
 
@@ -42,16 +42,16 @@ int main() {
     for (int i = 0; i < noOfStds; i++) {
         printf("Student %d: ", i + 1);
         for (int j = 0; j < num_grades[i]; j++) {
-            printf("%d ", grades[i][j]);
+            printf("%d ", students[i][j]);
         }
         printf("\n");
     }
 
     // 5. Free allocated memory
     for (int i = 0; i < noOfStds; i++) {
-        free(grades[i]);
+        free(students[i]);
     }
-    free(grades);
+    free(students);
     free(num_grades);
 
     return 0;
