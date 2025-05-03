@@ -11,7 +11,7 @@ void evenfun(int *arr, int n)
     {
         if ( arr[i] % 2 != 0)
         {
-            arr[i]++;
+            arr[i]--;
         }
     }
 }
@@ -23,6 +23,11 @@ int main()
     int n;
     printf("Enter the number of elements in the array: ");
     scanf("%d",&n);
+    if(n<2)
+    {
+     printf("This could not be the correct array size");
+      return 1;
+    }
     int *arr= (int *)malloc(n * sizeof(int));
     printf("\nEnter the elements of the array: ");
     for(int i=0; i< n; i++)
